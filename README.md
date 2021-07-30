@@ -34,5 +34,5 @@ el respectivo readme.
 8. Manejo de GIT 
 9. Responsive design
 
-
+Imagen de <a href="https://pixabay.com/es/users/marcelot87-940917/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=996461">Marcelo Toro</a> en <a href="https://pixabay.com/es/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=996461">Pixabay</a>
 Imagen de <a href="https://pixabay.com/es/users/andresmmartinez-8301129/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3210384">Andres Martinez</a> en <a href="https://pixabay.com/es/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3210384">Pixabay</a>
