@@ -115,11 +115,13 @@
   box-shadow: 5px 15px 15px $grayShadow;
   & h3 {
     color: black;
+    font-weight: $letter_black;
     text-align: center;
     padding-top: 5rem;
   }
   & p {
-    color: white;
+    color: black;
+    font-weight: $letter_black;
     text-align: center;
     margin: 0.5rem 0 0 -3rem;
   }
