@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/modernizer.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Climapp</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Gradiweb</h1>
+        <div class="box">
+            <header>
+                <div class="header_img">
+                    <h2 id="city"><i class="bi bi-geo-alt"></i>Colombiá</h2>
+                    <div class="box_purple">
+                        <div class="box_shadow" id="grad">
+                        </div>
+                        <div class="box_blue" id="icon">
+                            <p id="weather_text"> </p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+            <!---------------cards 3 days--------------------------->
+            <div class="container_movil">
+                <section class="forecast ">
+                    <h2>3 days <span>Forecast</span></h2>
+                    <div>
+                        <div class="card-days">
+                            <div class="icon" id="icon_uno"></div>
+                            <div class="texto">
+                                <p class="day" id="day"></p>
+                                <p class="wheater_day" id="wheater_day"></p>
+                            </div>
+                            <div class="wheater_num">
+                                <p id="grad_uno"></p>
+                            </div>
+                        </div>
+                        <div class="card-days">
+                            <div class="icon" id="icon_dos"></div>
+                            <div class="texto">
+                                <p class="day" id="day"></p>
+                                <p class="wheater_day" id="wheater_day"></p>
+                            </div>
+                            <div class="wheater_num">
+                                <p id="grad_dos"></p>
+                            </div>
+                        </div>
+                        <div class="card-days">
+                            <div class="icon" id="icon_tres"></div>
+                            <div class="texto">
+                                <p class="day" id="day"></p>
+                                <p class="wheater_day" id="wheater_day"></p>
+                            </div>
+                            <div class="wheater_num">
+                                <p id="grad_tres"></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-------------------------place tovisit-------------------->
+                <section class="place_tovisit">
+                    <h2>place to <span>visit</span> </h2>
+                    <div class="places">
+                        <h3><i class="bi bi-geo-alt"> Eiffel Tower</i></h3>
+                        <p>Paris</p>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="places_u">
+                        <h3><i class="bi bi-geo-alt"> Art Museum</i></h3>
+
+                    </div>
+                    <div class="places_d">
+                        <h3><i class="bi bi-geo-alt"> México City</i></h3>
+                        <div class="btn">+</div>
+                    </div>
+                </section>
+                <!-------------cards other cities------------------------------------------>
+                <section class="other_cities">
+                    <div class="card_rigth">
+                        <div class="flex_card">
+                            <div class="icon" id="icon_cuatro"></div>
+                            <div>
+                                <p class="grad" id="grad_cuatro">
+                                    <span>°</span>
+                                    <span>c</span>
+                                </p>
+                            </div>
+                            <div class="coutry_city">
+                                <p class="country" id="country"></p>
+                                <p class="city" id="city_dos"></p>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <p id="humidity"></p>
+                            <p id="deg_wind"></p>
+                            <p id="wind_speed"></p>
+                        </div>
+                    </div>
+                    <!--card2-->
+                    <div class="card_rigth">
+                        <div class="flex_card">
+                            <div class="icon" id="icon"></div>
+                            <div>
+                                <p class="grad" id="grad_cinco">
+                                    <span>°</span>
+                                    <span>c</span>
+                                </p>
+                            </div>
+                            <div class="coutry_city">
+                                <p class="country" id="country"></p>
+                                <p class="city" id="city_tres"></p>
+                            </div>
+
+                            <div class="data">
+                                <p id="humidity_uno"></p>
+                                <p id="deg_wind_uno"></p>
+                                <p id="wind_speed_uno"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="add_more">
+                        <h3>Add Locations<i class="bi bi-geo-alt"></i></h3>
+
+                    </div>
+
+                </section>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="js/WeatherDay.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>

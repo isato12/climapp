@@ -1,0 +1,215 @@
+.header_img {
+  min-width: 20rem;
+  background-image: url(../img/nubes.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 20rem;
+  margin: 0;
+}
+.header_img h2 {
+  color: $purple;
+  position: absolute;
+  left: 140px;
+  top: 50px;
+  font-weight: $letter_black;
+}
+.box_purple {
+  display: block;
+  width: 9rem;
+  height: 16rem;
+  position: absolute;
+  top: 50px;
+  background-color: $purple;
+  border-radius: 0 2rem 2rem 0;
+  box-shadow: 2rem 2rem 1.5rem rgba(0, 0, 0, 0.25);
+  &::after {
+    content: "";
+    position: absolute; /* A través del posicionamiento absoluto, establecemos los valores relacionados con la parte superior, izquierda, derecha e inferior, colocamos en la posición donde queremos colocar el triángulo */
+    top: -5px;
+    left: -30px;
+    border-top: 30px solid $blue; /* Para ver más claramente, primero configure un color diferente del marco */
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    transform: rotate(45deg);
+  }
+  &::before {
+    content: "";
+    position: absolute; /* A través del posicionamiento absoluto, establecemos los valores relacionados con la parte superior, izquierda, derecha e inferior, colocamos en la posición donde queremos colocar el triángulo */
+    bottom: 5px;
+    left: -20px;
+    border-top: 30px solid transparent; /* Para ver más claramente, primero configure un color diferente del marco */
+    border-left: 30px solid $purple;
+    border-right: 30px solid transparent;
+    transform: rotate(-45deg);
+  }
+  #grad {
+    color: white;
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 3rem;
+    font-weight: $letter_black;
+  }
+
+  .box_blue {
+    display: block;
+    width: 9rem;
+    height: 8rem;
+    position: absolute;
+    top: 0rem;
+    background-color: $blue;
+    border-radius: 0 2rem 2rem 0;
+  }
+  #weather_text {
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 5rem;
+    font-size: 3rem;
+    font-weight: $letter_black;
+  }
+  .box_shadow {
+    display: block;
+    width: 9rem;
+    height: 8rem;
+    position: absolute;
+    bottom: 0rem;
+    background-color: $purple;
+    border-radius: 0 2rem 2rem 0;
+    box-shadow: 0rem 2rem 1.5rem rgba(0, 0, 0, 0.25);
+  }
+}
+.container_movil {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.forecast {
+  min-width: 20rem;
+  margin: 2rem 0;
+}
+.card-days {
+  width: 20rem;
+  height: 8rem;
+  margin-bottom: 1rem;
+}
+
+.wheater_num {
+  width: 8rem;
+  height: 8rem;
+  background-color: $purple;
+  border-radius: 2rem;
+  & p {
+    color: white;
+  }
+}
+.places {
+  margin: 2rem 0;
+  min-width: 20rem;
+  height: 25rem;
+  background-image: url(../img/torre.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2rem;
+  box-shadow: 5px 15px 15px $grayShadow;
+  & h3 {
+    color: white;
+    text-align: center;
+    padding-top: 5rem;
+  }
+  & p {
+    color: white;
+    text-align: center;
+    margin: 0.5rem 0 0 -3rem;
+  }
+}
+
+.places_u {
+  margin: 2rem 0;
+  min-width: 20rem;
+  height: 10rem;
+  background-image: url(../img/museo.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2rem;
+  & h3 {
+    color: white;
+    text-align: center;
+    padding-top: 5rem;
+  }
+}
+.places_d {
+  margin: 2rem 0;
+  min-width: 20rem;
+  max-width: 20rem;
+  height: 15rem;
+  background-image: url(../img/mexico.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2rem;
+  & h3 {
+    color: black;
+    margin: 10px;
+    padding-top: 2rem;
+  }
+  .btn {
+    height: 15rem;
+    margin: -55px 0 0 155px;
+    width: 8rem;
+    background-color: $purple;
+    color: white;
+    font-size: 4rem;
+    display: grid;
+    place-items: center;
+    border-radius: 2rem;
+  }
+}
+.other_cities {
+  min-width: 23rem;
+  margin-top: 2rem 0;
+  .card_rigth {
+    width: 20rem;
+    height: 12rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 2rem;
+    box-shadow: 5px 15px 15px $grayShadow;
+    background-color: #fff;
+  }
+  .flex_card {
+    display: flex;
+    flex-direction: column;
+  }
+  .icon {
+    width: 7.5rem;
+    height: 7.5rem;
+    background-color: $blu_sky;
+    border-radius: 2rem;
+  }
+}
+.add_more {
+  margin: 2rem 0;
+  min-width: 20rem;
+  height: 15rem;
+  background-image: url(../img/city.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  & h3 {
+    color: $purple;
+    text-align: center;
+    padding-top: 5rem;
+  }
+  & i {
+    display: block;
+    margin-top: 2rem;
+  }
+}
+
+.other_cities {
+  min-width: 20rem;
+}

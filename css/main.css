@@ -1,0 +1,318 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200;1,300;1,600;1,900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+*,
+*::before,
+*:after {
+  box-sizing: inherit; }
+
+body {
+  font-size: 16px;
+  background-color: #d6dde5;
+  font-family: "Fira Sans", sans-serif; }
+
+h1,
+h2,
+h3,
+p,
+span {
+  margin: 0;
+  padding: 0; }
+
+img {
+  max-width: 300px; }
+
+h1 {
+  color: #7d67ed;
+  font-weight: 900;
+  text-align: right;
+  margin-right: 10px; }
+
+h2 {
+  text-align: center;
+  margin: 2rem 0; }
+  h2 span {
+    font-weight: 200; }
+
+.header_img {
+  min-width: 20rem;
+  background-image: url(../img/nubes.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 20rem;
+  margin: 0; }
+
+.header_img h2 {
+  color: #7d67ed;
+  position: absolute;
+  left: 140px;
+  top: 50px;
+  font-weight: 900; }
+
+.box_purple {
+  display: block;
+  width: 9rem;
+  height: 16rem;
+  position: absolute;
+  top: 50px;
+  background-color: #7d67ed;
+  border-radius: 0 2rem 2rem 0;
+  box-shadow: 2rem 2rem 1.5rem rgba(0, 0, 0, 0.25); }
+  .box_purple::after {
+    content: "";
+    position: absolute;
+    /* A través del posicionamiento absoluto, establecemos los valores relacionados con la parte superior, izquierda, derecha e inferior, colocamos en la posición donde queremos colocar el triángulo */
+    top: -5px;
+    left: -30px;
+    border-top: 30px solid #2e338d;
+    /* Para ver más claramente, primero configure un color diferente del marco */
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    transform: rotate(45deg); }
+  .box_purple::before {
+    content: "";
+    position: absolute;
+    /* A través del posicionamiento absoluto, establecemos los valores relacionados con la parte superior, izquierda, derecha e inferior, colocamos en la posición donde queremos colocar el triángulo */
+    bottom: 5px;
+    left: -20px;
+    border-top: 30px solid transparent;
+    /* Para ver más claramente, primero configure un color diferente del marco */
+    border-left: 30px solid #7d67ed;
+    border-right: 30px solid transparent;
+    transform: rotate(-45deg); }
+  .box_purple #grad {
+    color: white;
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 3rem;
+    font-weight: 900; }
+  .box_purple .box_blue {
+    display: block;
+    width: 9rem;
+    height: 8rem;
+    position: absolute;
+    top: 0rem;
+    background-color: #2e338d;
+    border-radius: 0 2rem 2rem 0; }
+  .box_purple #weather_text {
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 5rem;
+    font-size: 3rem;
+    font-weight: 900; }
+  .box_purple .box_shadow {
+    display: block;
+    width: 9rem;
+    height: 8rem;
+    position: absolute;
+    bottom: 0rem;
+    background-color: #7d67ed;
+    border-radius: 0 2rem 2rem 0;
+    box-shadow: 0rem 2rem 1.5rem rgba(0, 0, 0, 0.25); }
+
+.container_movil {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto; }
+
+.forecast {
+  min-width: 20rem;
+  margin: 2rem 0; }
+
+.card-days {
+  width: 20rem;
+  height: 8rem;
+  margin-bottom: 1rem; }
+
+.wheater_num {
+  width: 8rem;
+  height: 8rem;
+  background-color: #7d67ed;
+  border-radius: 2rem; }
+  .wheater_num p {
+    color: white; }
+
+.places {
+  margin: 2rem 0;
+  min-width: 20rem;
+  height: 25rem;
+  background-image: url(../img/torre.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2rem;
+  box-shadow: 5px 15px 15px #7b7b7b; }
+  .places h3 {
+    color: white;
+    text-align: center;
+    padding-top: 5rem; }
+  .places p {
+    color: white;
+    text-align: center;
+    margin: 0.5rem 0 0 -3rem; }
+
+.places_u {
+  margin: 2rem 0;
+  min-width: 20rem;
+  height: 10rem;
+  background-image: url(../img/museo.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2rem; }
+  .places_u h3 {
+    color: white;
+    text-align: center;
+    padding-top: 5rem; }
+
+.places_d {
+  margin: 2rem 0;
+  min-width: 20rem;
+  max-width: 20rem;
+  height: 15rem;
+  background-image: url(../img/mexico.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2rem; }
+  .places_d h3 {
+    color: black;
+    margin: 10px;
+    padding-top: 2rem; }
+  .places_d .btn {
+    height: 15rem;
+    margin: -55px 0 0 155px;
+    width: 8rem;
+    background-color: #7d67ed;
+    color: white;
+    font-size: 4rem;
+    display: grid;
+    place-items: center;
+    border-radius: 2rem; }
+
+.other_cities {
+  min-width: 23rem;
+  margin-top: 2rem 0; }
+  .other_cities .card_rigth {
+    width: 20rem;
+    height: 12rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 2rem;
+    box-shadow: 5px 15px 15px #7b7b7b;
+    background-color: #fff; }
+  .other_cities .flex_card {
+    display: flex;
+    flex-direction: column; }
+  .other_cities .icon {
+    width: 7.5rem;
+    height: 7.5rem;
+    background-color: #c7def4;
+    border-radius: 2rem; }
+
+.add_more {
+  margin: 2rem 0;
+  min-width: 20rem;
+  height: 15rem;
+  background-image: url(../img/city.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .add_more h3 {
+    color: #7d67ed;
+    text-align: center;
+    padding-top: 5rem; }
+  .add_more i {
+    display: block;
+    margin-top: 2rem; }
+
+.other_cities {
+  min-width: 20rem; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 110rem;
+    height: 100vh;
+    margin: 0 auto; }
+  .box {
+    background-color: white;
+    margin: 5rem 0 0 0;
+    width: 110rem;
+    height: 70rem;
+    border-radius: 3rem;
+    box-shadow: 25px 25px 20px #7b7b7b; }
+  header {
+    position: relative;
+    width: 100rem;
+    height: 7rem;
+    margin: 0 auto;
+    padding-top: 5rem; }
+    header .header_img {
+      border-radius: 3rem;
+      min-width: 100%; }
+  .header_img h2 {
+    left: 250px;
+    top: 100px;
+    font-size: 4rem; } }
+
+@media (min-width: 768px) {
+  .box_purple {
+    width: 10rem;
+    height: 17rem;
+    top: 6.5rem;
+    left: -5rem; }
+    .box_purple::after {
+      top: 0;
+      left: -20px;
+      transform: rotate(45deg); }
+    .box_purple::before {
+      bottom: -30px;
+      left: -15px;
+      transform: rotate(90deg); }
+    .box_purple .box_blue {
+      width: 10rem;
+      height: 9rem;
+      top: 0rem;
+      background-color: #2e338d; }
+    .box_purple .box_shadow {
+      width: 10rem;
+      height: 9rem;
+      bottom: 0rem; } }
+
+@media (min-width: 768px) {
+  .container_movil {
+    width: 100%;
+    margin-top: 20rem; }
+  .forecast {
+    margin-left: 20px;
+    margin: 2.5rem 2rem; }
+  .card-days {
+    width: 20rem; }
+  .place_tovisit {
+    margin: 2.5rem 2rem;
+    width: 25rem; }
+  .places_u {
+    margin: 8rem 2rem 0 2rem;
+    width: 25rem;
+    height: 8rem; }
+  .places_d {
+    margin: 2rem 4rem;
+    width: 30rem; } }
+
+@media (min-width: 768px) {
+  .other_cities {
+    z-index: 2000;
+    position: absolute;
+    margin-top: -10rem;
+    right: 470px; }
+  .add_more {
+    margin-top: 3rem; } }

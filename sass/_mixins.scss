@@ -1,0 +1,10 @@
+@mixin telefono {
+  @media (min-width: 280px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}

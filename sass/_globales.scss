@@ -1,0 +1,41 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-size: 16px;
+  background-color: $background_body;
+  font-family: $font;
+}
+h1,
+h2,
+h3,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 300px;
+}
+h1 {
+  color: $purple;
+  font-weight: $letter_black;
+  text-align: right;
+  margin-right: 10px;
+}
+h2 {
+  text-align: center;
+  margin: 2rem 0;
+  & span {
+    font-weight: $letter_xs;
+  }
+}
+
