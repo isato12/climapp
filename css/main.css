@@ -315,9 +315,6 @@ h2 {
   .other_cities {
     min-width: 23rem;
     margin-top: 2rem auto; }
-    .other_cities .card_rigth {
-      width: 22rem;
-      height: 12rem; }
   .add_more {
     margin: 2rem auto;
     min-width: 20rem;
@@ -402,6 +399,8 @@ h2 {
     position: absolute;
     margin-top: -10rem;
     right: 475px; }
+  .card_rigth {
+    height: 10rem; }
   .add_more {
     margin-top: 6.5rem;
     height: 15rem; } }
