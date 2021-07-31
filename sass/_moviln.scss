@@ -1,0 +1,145 @@
+// @include telefonox {
+//   .header_img {
+//     min-width: 25rem;
+//     height: 20rem;
+//     margin: 0;
+//   }
+
+//   .container_movil {
+//     width: 95%;
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin: 0 auto;
+//   }
+//   .forecast {
+//     min-width: 20rem;
+//     margin: 2rem 0;
+//   }
+//   .card-days {
+//     width: 20rem;
+//     height: 8rem;
+//     margin-bottom: 1rem;
+//   }
+
+//   .wheater_num {
+//     width: 8rem;
+//     height: 8rem;
+//     background-color: $purple;
+//     border-radius: 2rem;
+//     & p {
+//       color: white;
+//     }
+//   }
+//   .places {
+//     margin: 2rem 0;
+//     min-width: 20rem;
+//     height: 25rem;
+//     background-image: url(../img/pueblo.jpg);
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     border-radius: 2rem;
+//     box-shadow: 5px 15px 15px $grayShadow;
+//     & h3 {
+//       color: black;
+//       font-weight: $letter_black;
+//       text-align: center;
+//       padding-top: 2rem;
+//     }
+//     & p {
+//       color: black;
+//       font-weight: $letter_black;
+//       text-align: center;
+//       margin: 0.5rem 0 0 -3rem;
+//     }
+//   }
+
+//   .places_u {
+//     margin: 2rem 0;
+//     min-width: 20rem;
+//     height: 10rem;
+//     background-image: url(../img/museo.jpg);
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     border-radius: 2rem;
+//     & h3 {
+//       color: white;
+//       text-align: center;
+//       padding-top: 5rem;
+//     }
+//   }
+//   .places_d {
+//     margin: 2rem 0;
+//     min-width: 20rem;
+//     max-width: 20rem;
+//     height: 15rem;
+//     background-image: url(../img/mexico.jpg);
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     border-radius: 2rem;
+//     & h3 {
+//       color: black;
+//       margin: 10px;
+//       padding-top: 2rem;
+//     }
+//     .btn {
+//       height: 15rem;
+//       margin: -55px 0 0 155px;
+//       width: 8rem;
+//       background-color: $purple;
+//       color: white;
+//       font-size: 4rem;
+//       display: grid;
+//       place-items: center;
+//       border-radius: 2rem;
+//     }
+//   }
+//   .other_cities {
+//     min-width: 23rem;
+//     margin-top: 2rem 0;
+//     .card_rigth {
+//       width: 20rem;
+//       height: 12rem;
+//       margin-bottom: 2rem;
+//       display: flex;
+//       flex-direction: row;
+//       border-radius: 2rem;
+//       box-shadow: 5px 15px 15px $grayShadow;
+//       background-color: #fff;
+//     }
+//     .flex_card {
+//       display: flex;
+//       flex-direction: column;
+//     }
+//     .icon {
+//       width: 7.5rem;
+//       height: 7.5rem;
+//       background-color: $blu_sky;
+//       border-radius: 2rem;
+//     }
+//   }
+//   .add_more {
+//     margin: 2rem 0;
+//     min-width: 20rem;
+//     height: 15rem;
+//     background-image: url(../img/city.jpg);
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     & h3 {
+//       color: $purple;
+//       text-align: center;
+//       padding-top: 5rem;
+//     }
+//     & i {
+//       display: block;
+//       margin-top: 2rem;
+//     }
+//   }
+
+//   .other_cities {
+//     min-width: 20rem;
+//   }
+// }

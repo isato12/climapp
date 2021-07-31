@@ -25,9 +25,6 @@ span {
   margin: 0;
   padding: 0; }
 
-img {
-  max-width: 300px; }
-
 h1 {
   color: #7d67ed;
   font-weight: 900;
@@ -40,74 +37,67 @@ h2 {
   h2 span {
     font-weight: 200; }
 
-.header_img {
-  min-width: 20rem;
-  background-image: url(../img/nubes.jpg);
-  background-position: center center;
-  background-size: cover;
-  height: 20rem;
-  margin: 0; }
-
-.header_img h2 {
-  color: #7d67ed;
-  position: absolute;
-  left: 140px;
-  top: 50px;
-  font-weight: 900; }
-
-.box_purple {
-  display: block;
-  width: 9rem;
-  height: 16rem;
-  position: absolute;
-  top: 50px;
-  background-color: #7d67ed;
-  border-radius: 0 2rem 2rem 0;
-  box-shadow: 2rem 2rem 1.5rem rgba(0, 0, 0, 0.25); }
-  .box_purple::after {
-    content: "";
+@media (min-width: 280px) {
+  .header_img {
+    min-width: 20rem;
+    background-image: url(../img/nubes.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 20rem;
+    margin: 0; }
+  .header_img h2 {
+    color: #7d67ed;
     position: absolute;
-    /* A través del posicionamiento absoluto, establecemos los valores relacionados con la parte superior, izquierda, derecha e inferior, colocamos en la posición donde queremos colocar el triángulo */
-    top: -5px;
-    left: -30px;
-    border-top: 30px solid #2e338d;
-    /* Para ver más claramente, primero configure un color diferente del marco */
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    transform: rotate(45deg); }
-  .box_purple::before {
-    content: "";
-    position: absolute;
-    /* A través del posicionamiento absoluto, establecemos los valores relacionados con la parte superior, izquierda, derecha e inferior, colocamos en la posición donde queremos colocar el triángulo */
-    bottom: 5px;
-    left: -20px;
-    border-top: 30px solid transparent;
-    /* Para ver más claramente, primero configure un color diferente del marco */
-    border-left: 30px solid #7d67ed;
-    border-right: 30px solid transparent;
-    transform: rotate(-45deg); }
-  .box_purple #grad {
-    color: white;
-    text-align: center;
-    padding-top: 3rem;
-    font-size: 3rem;
+    left: 140px;
+    top: 50px;
     font-weight: 900; }
-  .box_purple .box_blue {
+  .box_purple {
     display: block;
     width: 9rem;
-    height: 8rem;
+    height: 16rem;
     position: absolute;
-    top: 0rem;
-    background-color: #2e338d;
-    border-radius: 0 2rem 2rem 0; }
-  .box_purple #weather_text {
-    color: white;
-    text-align: center;
-    margin-top: 2rem;
-    padding-top: 5rem;
-    font-size: 3rem;
-    font-weight: 900; }
-  .box_purple .box_shadow {
+    top: 50px;
+    background-color: #7d67ed;
+    border-radius: 0 2rem 2rem 0;
+    box-shadow: 2rem 2rem 1.5rem rgba(0, 0, 0, 0.25);
+    z-index: 1; }
+    .box_purple::after {
+      content: "";
+      position: absolute;
+      /* A través del posicionamiento absoluto, establecemos los valores relacionados con la parte superior, izquierda, derecha e inferior, colocamos en la posición donde queremos colocar el triángulo */
+      top: -5px;
+      left: -30px;
+      border-top: 30px solid #2e338d;
+      /* Para ver más claramente, primero configure un color diferente del marco */
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      transform: rotate(45deg); }
+    .box_purple::before {
+      content: "";
+      position: absolute;
+      /* A través del posicionamiento absoluto, establecemos los valores relacionados con la parte superior, izquierda, derecha e inferior, colocamos en la posición donde queremos colocar el triángulo */
+      bottom: 5px;
+      left: -18px;
+      border-top: 30px solid transparent;
+      /* Para ver más claramente, primero configure un color diferente del marco */
+      border-left: 30px solid #7d67ed;
+      border-right: 30px solid transparent;
+      transform: rotate(-45deg);
+      z-index: 3; }
+    .box_purple .box_blue {
+      display: grid;
+      place-items: center;
+      width: 9rem;
+      height: 8rem;
+      position: absolute;
+      top: 0rem;
+      background-color: #2e338d;
+      border-radius: 0 2rem 2rem 0; }
+      .box_purple .box_blue i {
+        color: white;
+        font-size: 3rem;
+        padding-top: 1rem; }
+  .box_shadow {
     display: block;
     width: 9rem;
     height: 8rem;
@@ -116,128 +106,183 @@ h2 {
     background-color: #7d67ed;
     border-radius: 0 2rem 2rem 0;
     box-shadow: 0rem 2rem 1.5rem rgba(0, 0, 0, 0.25); }
-
-.container_movil {
-  width: 95%;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto; }
-
-.forecast {
-  min-width: 20rem;
-  margin: 2rem 0; }
-
-.card-days {
-  width: 20rem;
-  height: 8rem;
-  margin-bottom: 1rem; }
-
-.wheater_num {
-  width: 8rem;
-  height: 8rem;
-  background-color: #7d67ed;
-  border-radius: 2rem; }
-  .wheater_num p {
-    color: white; }
-
-.places {
-  margin: 2rem 0;
-  min-width: 20rem;
-  height: 25rem;
-  background-image: url(../img/pueblo.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 2rem;
-  box-shadow: 5px 15px 15px #7b7b7b; }
-  .places h3 {
-    color: black;
-    font-weight: 900;
-    text-align: center;
-    padding-top: 5rem; }
-  .places p {
-    color: black;
-    text-align: center;
-    margin: 0.5rem 0 0 -3rem; }
-
-.places_u {
-  margin: 2rem 0;
-  min-width: 20rem;
-  height: 10rem;
-  background-image: url(../img/museo.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 2rem; }
-  .places_u h3 {
+  .description {
     color: white;
-    text-align: center;
-    padding-top: 5rem; }
-
-.places_d {
-  margin: 2rem 0;
-  min-width: 20rem;
-  max-width: 20rem;
-  height: 15rem;
-  background-image: url(../img/mexico.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 2rem; }
-  .places_d h3 {
-    color: black;
-    margin: 10px;
-    padding-top: 2rem; }
-  .places_d .btn {
-    height: 15rem;
-    margin: -55px 0 0 155px;
-    width: 8rem;
-    background-color: #7d67ed;
-    color: white;
-    font-size: 4rem;
+    font-weight: 600;
     display: grid;
     place-items: center;
-    border-radius: 2rem; }
-
-.other_cities {
-  min-width: 23rem;
-  margin-top: 2rem 0; }
-  .other_cities .card_rigth {
-    width: 20rem;
-    height: 12rem;
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: row;
-    border-radius: 2rem;
-    box-shadow: 5px 15px 15px #7b7b7b;
-    background-color: #fff; }
-  .other_cities .flex_card {
-    display: flex;
-    flex-direction: column; }
-  .other_cities .icon {
-    width: 7.5rem;
-    height: 7.5rem;
-    background-color: #c7def4;
-    border-radius: 2rem; }
-
-.add_more {
-  margin: 2rem 0;
-  min-width: 20rem;
-  height: 15rem;
-  background-image: url(../img/city.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  .add_more h3 {
-    color: #7d67ed;
+    margin-top: -4rem; }
+  .deg {
+    color: white;
     text-align: center;
-    padding-top: 5rem; }
-  .add_more i {
-    display: block;
-    margin-top: 2rem; }
-
-.other_cities {
-  min-width: 20rem; }
+    padding-top: 3rem;
+    font-size: 3rem;
+    font-weight: 900; }
+  /*forecast*/
+  .container_movil {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto; }
+  .forecast {
+    min-width: 20rem;
+    margin: 2rem 0; }
+  .card-days {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+    height: 8rem;
+    margin-bottom: 1rem; }
+    .card-days .icon {
+      display: grid;
+      place-items: center;
+      color: #7d67ed; }
+    .card-days i {
+      font-size: 3rem;
+      padding: 0 1rem; }
+    .card-days .texto {
+      display: grid;
+      place-items: center; }
+      .card-days .texto .day {
+        padding-top: 1rem;
+        margin: 0 1rem -1rem 1rem; }
+      .card-days .texto .description_days {
+        padding-bottom: 1rem;
+        margin: -1rem 1rem 0 1rem; }
+    .card-days .deg_d {
+      display: grid;
+      place-items: center;
+      width: 8rem;
+      height: 8rem;
+      background-color: #7d67ed;
+      border-radius: 2rem; }
+      .card-days .deg_d p {
+        font-size: 1.8rem;
+        font-weight: 900;
+        color: white; }
+  .places {
+    margin: 2rem 0;
+    min-width: 20rem;
+    height: 25rem;
+    background-image: url(../img/torre.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+    box-shadow: 5px 15px 15px #7b7b7b; }
+    .places h3 {
+      color: white;
+      text-align: center;
+      padding-top: 5rem; }
+    .places p {
+      color: white;
+      text-align: center;
+      margin: 0.5rem 0 0 -3rem; }
+  .places_u {
+    margin: 2rem 0;
+    min-width: 20rem;
+    height: 10rem;
+    background-image: url(../img/museo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem; }
+    .places_u h3 {
+      color: white;
+      text-align: center;
+      padding-top: 5rem; }
+  .places_d {
+    margin: 2rem 0;
+    min-width: 20rem;
+    max-width: 20rem;
+    height: 15rem;
+    background-image: url(../img/mexico.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem; }
+    .places_d h3 {
+      color: black;
+      margin: 10px;
+      padding-top: 2rem; }
+    .places_d .btn {
+      height: 15rem;
+      margin: -55px 0 0 155px;
+      width: 8rem;
+      background-color: #7d67ed;
+      color: white;
+      font-size: 4rem;
+      display: grid;
+      place-items: center;
+      border-radius: 2rem; }
+  .other_cities {
+    min-width: 23rem;
+    margin-top: 2rem 0; }
+    .other_cities .card_rigth {
+      display: flex;
+      flex-direction: column;
+      width: 20rem;
+      height: 10rem;
+      margin-bottom: 2rem;
+      border-radius: 2rem;
+      box-shadow: 5px 15px 15px #7b7b7b;
+      background-color: #fff; }
+      .other_cities .card_rigth .flex_card {
+        display: flex;
+        flex: wrap; }
+        .other_cities .card_rigth .flex_card .icon {
+          width: 6.5rem;
+          height: 6.5rem;
+          background-color: #c7def4;
+          display: grid;
+          place-items: center;
+          border-radius: 2rem 1rem 1rem 1rem; }
+          .other_cities .card_rigth .flex_card .icon i {
+            font-size: 3rem;
+            padding: 0 1rem;
+            color: #7d67ed; }
+        .other_cities .card_rigth .flex_card .deg_o {
+          padding: 2rem 0.5rem;
+          font-size: 2rem;
+          font-weight: 900; }
+          .other_cities .card_rigth .flex_card .deg_o .one {
+            color: #949494;
+            margin: 0; }
+          .other_cities .card_rigth .flex_card .deg_o .two {
+            color: #949494;
+            font-size: 1.5rem;
+            margin-top: -5px; }
+        .other_cities .card_rigth .flex_card .coutry_city {
+          padding: 2rem 1rem;
+          font-weight: 900; }
+      .other_cities .card_rigth .data {
+        display: flex;
+        flex: wrap;
+        padding: 1rem; }
+        .other_cities .card_rigth .data .humidity {
+          margin-right: 1rem; }
+        .other_cities .card_rigth .data .deg_wind {
+          margin-right: 1rem; }
+        .other_cities .card_rigth .data .wind_speed {
+          margin-right: 1rem; }
+  .add_more {
+    margin: 2rem 0;
+    min-width: 20rem;
+    height: 15rem;
+    background-image: url(../img/city.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .add_more h3 {
+      color: #7d67ed;
+      text-align: center;
+      padding-top: 5rem; }
+    .add_more i {
+      display: block;
+      margin-top: 2rem; }
+  .other_cities {
+    min-width: 20rem; } }
 
 @media (min-width: 768px) {
   .container {

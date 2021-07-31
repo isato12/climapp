@@ -1,8 +1,8 @@
 //object1
 const city = document.querySelector("#city");
-const grad = document.querySelector("#grad");
+const deg = document.querySelector("#deg");
 const icon = document.querySelector("#icon");
-const weather_text = document.querySelector("#weather_text");
+const description = document.querySelector("#description");
 
 const getCity = "Colombia";
 
@@ -14,11 +14,10 @@ function onRequestHandler() {
   if (this.readyState === 4 && this.status === 200) {
     const data = JSON.parse(this.responseText);
     console.log(data);
-    weather_text.textContent = data.weather.main;
-    grad.textContent = `${Math.trunc(data.main.temp)}°C`;
+    // description.textContent = data.weather.main;
+    deg.textContent = `${Math.trunc(data.main.temp)}°C`;
   }
 }
-
 xhr.addEventListener("load", onRequestHandler);
 xhr.open("GET", URI, true);
 xhr.send();

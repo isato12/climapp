@@ -18,11 +18,11 @@
                 <div class="header_img">
                     <h2 id="city"><i class="bi bi-geo-alt"></i>Colombiá</h2>
                     <div class="box_purple">
-                        <div class="box_shadow" id="grad">
+                        <div class="box_blue icon" id="icon">
+                            <i class="bi bi-brightness-alt-high-fill"></i>
+                            <p id="description" class="description">cloudy </p>
                         </div>
-                        <div class="box_blue" id="icon">
-                            <p id="weather_text"> </p>
-                        </div>
+                        <div class="box_shadow deg" id="deg"></div>
                     </div>
                 </div>
             </header>
@@ -34,33 +34,44 @@
                     <h2>3 days <span>Forecast</span></h2>
                     <div>
                         <div class="card-days">
-                            <div class="icon" id="icon_uno"></div>
-                            <div class="texto">
-                                <p class="day" id="day"></p>
-                                <p class="wheater_day" id="wheater_day"></p>
+                            <div class="icon" id="icon_uno">
+                                <i class="bi bi-brightness-high-fill"></i>
                             </div>
-                            <div class="wheater_num">
-                                <p id="grad_uno"></p>
+                            <div class="texto">
+                                <p class="day" id="day_uno">saturday</p>
+                                <p class="description_days" id="description_uno">Sunny</p>
+                            </div>
+                            <div class="deg_d">
+                                <p id="deg_uno">12°/18°</p>
                             </div>
                         </div>
+
+                        <!------------------------------------------------->
+
                         <div class="card-days">
-                            <div class="icon" id="icon_dos"></div>
-                            <div class="texto">
-                                <p class="day" id="day"></p>
-                                <p class="wheater_day" id="wheater_day"></p>
+                            <div class="icon" id="icon_dos">
+                                <i class="bi bi-snow2"></i>
                             </div>
-                            <div class="wheater_num">
-                                <p id="grad_dos"></p>
+                            <div class="texto">
+                                <p class="day" id="day_dos">Sunday</p>
+                                <p class="description_days" id="description_dos">snow</p>
+                            </div>
+                            <div class="deg_d">
+                                <p id="deg_dos">-5°/-1°</p>
                             </div>
                         </div>
+
+                        <!------------------------------------------------->
                         <div class="card-days">
-                            <div class="icon" id="icon_tres"></div>
-                            <div class="texto">
-                                <p class="day" id="day"></p>
-                                <p class="wheater_day" id="wheater_day"></p>
+                            <div class="icon" id="icon_tres">
+                                <i class="bi bi-clouds-fill"></i>
                             </div>
-                            <div class="wheater_num">
-                                <p id="grad_tres"></p>
+                            <div class="texto">
+                                <p class="day" id="day_tres">Monday</p>
+                                <p class="description_days" id="description_tres">cloudy</p>
+                            </div>
+                            <div class="deg_d">
+                                <p id="deg_tres">6°/8°</p>
                             </div>
                         </div>
                     </div>
@@ -90,44 +101,46 @@
                 <section class="other_cities">
                     <div class="card_rigth">
                         <div class="flex_card">
-                            <div class="icon" id="icon_cuatro"></div>
+                            <div class="icon" id="icon_cuatro">
+                                <i class="bi bi-cloud-sun-fill"></i>
+                            </div>
                             <div>
-                                <p class="grad" id="grad_cuatro">
-                                    <span>°</span>
-                                    <span>c</span>
+                                <p class="deg_o" id="deg_cuatro">34
+                                    <span class="one">°<span class="two">C</span></span>
                                 </p>
                             </div>
                             <div class="coutry_city">
-                                <p class="country" id="country"></p>
-                                <p class="city" id="city_dos"></p>
+                                <p class="country" id="country">México</p>
+                                <p class="city" id="city_dos">Monterrey</p>
                             </div>
                         </div>
                         <div class="data">
-                            <p id="humidity"></p>
-                            <p id="deg_wind"></p>
-                            <p id="wind_speed"></p>
+                            <p id="humidity" class="humidity">Humidity 32%</p>
+                            <p id="deg_wind" class="deg_wind">east</p>
+                            <p id="wind_speed" class="wind_speed">30km/h</p>
                         </div>
                     </div>
+                    <!------------------------------------------------------------------------------------------->
                     <!--card2-->
                     <div class="card_rigth">
                         <div class="flex_card">
-                            <div class="icon" id="icon"></div>
+                            <div class="icon" id="icon_cinco">
+                                <i class="bi bi-cloud-sun-fill"></i>
+                            </div>
                             <div>
-                                <p class="grad" id="grad_cinco">
-                                    <span>°</span>
-                                    <span>c</span>
+                                <p class="deg_o" id="deg_cinco">34
+                                    <span class="one">°<span class="two">C</span></span>
                                 </p>
                             </div>
                             <div class="coutry_city">
-                                <p class="country" id="country"></p>
-                                <p class="city" id="city_tres"></p>
+                                <p class="country" id="country_dos">Francia</p>
+                                <p class="city" id="city_tres">Paris</p>
                             </div>
-
-                            <div class="data">
-                                <p id="humidity_uno"></p>
-                                <p id="deg_wind_uno"></p>
-                                <p id="wind_speed_uno"></p>
-                            </div>
+                        </div>
+                        <div class="data">
+                            <p id="humidity_dos" class="humidity">Humidity 32%</p>
+                            <p id="deg_wind_dos" class="deg_wind">east</p>
+                            <p id="wind_speed_dos" class="wind_speed">30km/h</p>
                         </div>
                     </div>
 
@@ -147,3 +160,18 @@
 </body>
 
 </html>
+
+
+
+
+<!--
+    <i class="bi bi-cloud-snow-fill"></i>
+    <i class="bi bi-cloud-moon-fill"></i>
+    <i class="bi bi-cloud-lightning-rain-fill"></i>
+    <i class="bi bi-cloud-lightning-fill"></i>      
+    <i class="bi bi-cloud-haze-fill"></i>
+    <i class="bi bi-cloud-haze2-fill"></i>
+    <i class="bi bi-cloud-hail-fill"></i>
+    <i class="bi bi-cloud-fog2-fill"></i>
+    <i class="bi bi-cloud-fog-fill"></i>
+    <i class="bi bi-cloud-fill"></i>
