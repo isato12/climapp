@@ -87,7 +87,7 @@
   }
   /*forecast*/
   .container_movil {
-    width: 95%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -144,7 +144,7 @@
     margin: 2rem 0;
     min-width: 20rem;
     height: 25rem;
-    background-image: url(../img/torre.jpg);
+    background-image: url(../img/pueblo.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -153,17 +153,18 @@
     & h3 {
       color: white;
       text-align: center;
-      padding-top: 5rem;
+      padding-top: 2.5rem;
+      font-weight: $letter_black;
     }
     & p {
       color: white;
       text-align: center;
-      margin: 0.5rem 0 0 -3rem;
+      margin: 0.5rem 0 0 0;
     }
   }
 
   .places_u {
-    margin: 2rem 0;
+    margin: 2rem auto;
     min-width: 20rem;
     height: 10rem;
     background-image: url(../img/museo.jpg);
@@ -178,7 +179,7 @@
     }
   }
   .places_d {
-    margin: 2rem 0;
+    margin: 2rem auto;
     min-width: 20rem;
     max-width: 20rem;
     height: 15rem;
@@ -193,7 +194,7 @@
       padding-top: 2rem;
     }
     .btn {
-      height: 15rem;
+      height: 100%;
       margin: -55px 0 0 155px;
       width: 8rem;
       background-color: $purple;
@@ -206,7 +207,7 @@
   }
   .other_cities {
     min-width: 23rem;
-    margin-top: 2rem 0;
+    margin: 2rem auto;
     .card_rigth {
       display: flex;
       flex-direction: column;
@@ -291,6 +292,10 @@
   }
 
   .other_cities {
+    margin: 0 auto;
     min-width: 20rem;
+    & i {
+      font-size: 2rem;
+    }
   }
 }

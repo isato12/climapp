@@ -120,7 +120,7 @@ h2 {
     font-weight: 900; }
   /*forecast*/
   .container_movil {
-    width: 95%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto; }
@@ -165,22 +165,23 @@ h2 {
     margin: 2rem 0;
     min-width: 20rem;
     height: 25rem;
-    background-image: url(../img/torre.jpg);
+    background-image: url(../img/pueblo.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 2rem;
-    box-shadow: 5px 15px 15px #7b7b7b; }
+    box-shadow: 5px 15px 15px #7b7b7b85; }
     .places h3 {
       color: white;
       text-align: center;
-      padding-top: 5rem; }
+      padding-top: 2.5rem;
+      font-weight: 900; }
     .places p {
       color: white;
       text-align: center;
-      margin: 0.5rem 0 0 -3rem; }
+      margin: 0.5rem 0 0 0; }
   .places_u {
-    margin: 2rem 0;
+    margin: 2rem auto;
     min-width: 20rem;
     height: 10rem;
     background-image: url(../img/museo.jpg);
@@ -193,7 +194,7 @@ h2 {
       text-align: center;
       padding-top: 5rem; }
   .places_d {
-    margin: 2rem 0;
+    margin: 2rem auto;
     min-width: 20rem;
     max-width: 20rem;
     height: 15rem;
@@ -207,7 +208,7 @@ h2 {
       margin: 10px;
       padding-top: 2rem; }
     .places_d .btn {
-      height: 15rem;
+      height: 100%;
       margin: -55px 0 0 155px;
       width: 8rem;
       background-color: #7d67ed;
@@ -218,7 +219,7 @@ h2 {
       border-radius: 2rem; }
   .other_cities {
     min-width: 23rem;
-    margin-top: 2rem 0; }
+    margin: 2rem auto; }
     .other_cities .card_rigth {
       display: flex;
       flex-direction: column;
@@ -226,7 +227,7 @@ h2 {
       height: 10rem;
       margin-bottom: 2rem;
       border-radius: 2rem;
-      box-shadow: 5px 15px 15px #7b7b7b;
+      box-shadow: 5px 15px 15px #7b7b7b85;
       background-color: #fff; }
       .other_cities .card_rigth .flex_card {
         display: flex;
@@ -282,7 +283,45 @@ h2 {
       display: block;
       margin-top: 2rem; }
   .other_cities {
-    min-width: 20rem; } }
+    margin: 0 auto;
+    min-width: 20rem; }
+    .other_cities i {
+      font-size: 2rem; } }
+
+@media (min-width: 320px) {
+  .container_movil {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto; }
+  .forecast {
+    min-width: 20rem;
+    margin: 2rem auto; }
+  .card-days {
+    width: 22rem;
+    height: 8rem;
+    margin-bottom: 1rem; }
+  .place_tovisit {
+    margin: 1rem auto; }
+  .places {
+    min-width: 20rem;
+    min-height: 25rem; }
+  .place_two {
+    margin: 0 auto; }
+  .places_u {
+    min-height: 10rem; }
+  .places_d {
+    min-height: 15rem; }
+  .other_cities {
+    min-width: 23rem;
+    margin-top: 2rem auto; }
+    .other_cities .card_rigth {
+      width: 22rem;
+      height: 12rem; }
+  .add_more {
+    margin: 2rem auto;
+    min-width: 20rem;
+    min-height: 15rem; } }
 
 @media (min-width: 768px) {
   .container {
@@ -295,7 +334,7 @@ h2 {
     width: 110rem;
     height: 70rem;
     border-radius: 3rem;
-    box-shadow: 25px 25px 20px #7b7b7b; }
+    box-shadow: 25px 25px 20px #7b7b7b85; }
   header {
     position: relative;
     width: 100rem;
@@ -304,7 +343,7 @@ h2 {
     padding-top: 5rem; }
     header .header_img {
       border-radius: 3rem;
-      min-width: 100%; }
+      width: 100%; }
   .header_img h2 {
     left: 250px;
     top: 100px;
@@ -318,7 +357,7 @@ h2 {
     left: -5rem; }
     .box_purple::after {
       top: 0;
-      left: -20px;
+      left: -19px;
       transform: rotate(45deg); }
     .box_purple::before {
       bottom: -30px;
@@ -326,8 +365,6 @@ h2 {
       transform: rotate(90deg); }
     .box_purple .box_blue {
       width: 10rem;
-      height: 9rem;
-      top: 0rem;
       background-color: #2e338d; }
     .box_purple .box_shadow {
       width: 10rem;
@@ -346,19 +383,25 @@ h2 {
   .place_tovisit {
     margin: 2.5rem 2rem;
     width: 25rem; }
+  .places {
+    min-height: 28rem; }
+  .place_two {
+    margin: 0; }
   .places_u {
-    margin: 8rem 2rem 0 2rem;
+    margin: 9rem 2rem 0 2rem;
     width: 25rem;
     height: 8rem; }
   .places_d {
     margin: 2rem 4rem;
-    width: 30rem; } }
+    width: 30rem;
+    height: 15rem; } }
 
 @media (min-width: 768px) {
   .other_cities {
     z-index: 2000;
     position: absolute;
     margin-top: -10rem;
-    right: 470px; }
+    right: 475px; }
   .add_more {
-    margin-top: 3rem; } }
+    margin-top: 6.5rem;
+    height: 15rem; } }

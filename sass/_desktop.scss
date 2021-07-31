@@ -20,7 +20,7 @@
     padding-top: 5rem;
     .header_img {
       border-radius: 3rem;
-      min-width: 100%;
+      width: 100%;
     }
   }
   .header_img h2 {
@@ -37,7 +37,7 @@
     left: -5rem;
     &::after {
       top: 0;
-      left: -20px;
+      left: -19px;
       transform: rotate(45deg);
     }
     &::before {
@@ -47,8 +47,6 @@
     }
     .box_blue {
       width: 10rem;
-      height: 9rem;
-      top: 0rem;
       background-color: $blue;
     }
     .box_shadow {
@@ -74,14 +72,21 @@
     margin: 2.5rem 2rem;
     width: 25rem;
   }
+  .places {
+    min-height: 28rem;
+  }
+  .place_two {
+    margin: 0;
+  }
   .places_u {
-    margin: 8rem 2rem 0 2rem;
+    margin: 9rem 2rem 0 2rem;
     width: 25rem;
     height: 8rem;
   }
   .places_d {
     margin: 2rem 4rem;
     width: 30rem;
+    height: 15rem;
   }
 }
 @include tablet {
@@ -89,9 +94,10 @@
     z-index: 2000;
     position: absolute;
     margin-top: -10rem;
-    right: 470px;
+    right: 475px;
   }
   .add_more {
-    margin-top: 3rem;
+    margin-top: 6.5rem;
+    height: 15rem;
   }
 }
