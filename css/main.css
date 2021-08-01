@@ -38,6 +38,8 @@ h2 {
     font-weight: 200; }
 
 @media (min-width: 280px) {
+  .box {
+    background-color: #fff; }
   .header_img {
     min-width: 20rem;
     background-image: url(../img/nubes.jpg);
@@ -199,6 +201,7 @@ h2 {
     max-width: 20rem;
     height: 15rem;
     display: flex;
+    justify-content: space-between;
     background-image: url(../img/mexico.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -211,7 +214,6 @@ h2 {
     .places_d .btn {
       height: 100%;
       width: 8rem;
-      align-items: flex-end;
       background-color: #7d67ed;
       color: white;
       font-size: 4rem;
@@ -224,7 +226,7 @@ h2 {
     .other_cities .card_rigth {
       display: flex;
       flex-direction: column;
-      width: 20rem;
+      width: 21rem;
       height: 11rem;
       margin: 0 auto 2rem auto;
       border-radius: 2rem;
@@ -262,12 +264,10 @@ h2 {
         display: flex;
         flex: wrap;
         justify-content: space-between;
-        padding: 1rem; }
+        padding: 1rem 0.5rem 1rem 0; }
         .other_cities .card_rigth .data .humidity {
           margin-right: 1rem; }
         .other_cities .card_rigth .data .deg_wind {
-          margin-right: 1rem; }
-        .other_cities .card_rigth .data .wind_speed {
           margin-right: 1rem; }
   .add_more {
     margin: 2rem 0;
@@ -317,9 +317,9 @@ h2 {
   .other_cities {
     min-width: 23rem;
     margin-top: 2rem auto; }
-  .card_rigth {
-    width: 21rem;
-    height: 11rem; }
+    .other_cities .card_rigth {
+      width: 23rem;
+      height: 12rem; }
   .add_more {
     margin: 2rem auto;
     min-width: 20rem;
@@ -401,9 +401,13 @@ h2 {
 @media (min-width: 768px) {
   .other_cities {
     z-index: 2000;
-    margin-top: -10rem; }
+    margin-top: -10rem;
+    margin-left: 1rem; }
   .card_rigth {
+    width: 21rem;
     height: 11rem; }
+  .data {
+    padding: 1rem 0.5rem; }
   .add_more {
     margin-top: 6.5rem;
     height: 15rem; } }

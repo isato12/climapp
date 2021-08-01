@@ -1,4 +1,7 @@
 @include telefono {
+  .box {
+    background-color: #fff;
+  }
   .header_img {
     min-width: 20rem;
     background-image: url(../img/nubes.jpg);
@@ -103,6 +106,7 @@
     width: 20rem;
     height: 8rem;
     margin-bottom: 1rem;
+
     .icon {
       display: grid;
       place-items: center;
@@ -184,6 +188,7 @@
     max-width: 20rem;
     height: 15rem;
     display: flex;
+    justify-content: space-between;
     background-image: url(../img/mexico.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -197,7 +202,6 @@
     .btn {
       height: 100%;
       width: 8rem;
-      align-items: flex-end;
       background-color: $purple;
       color: white;
       font-size: 4rem;
@@ -212,7 +216,7 @@
     .card_rigth {
       display: flex;
       flex-direction: column;
-      width: 20rem;
+      width: 21rem;
       height: 11rem;
       margin: 0 auto 2rem auto;
       border-radius: 2rem;
@@ -259,15 +263,12 @@
         display: flex;
         flex: wrap;
         justify-content: space-between;
-        padding: 1rem;
+        padding: 1rem 0.5rem 1rem 0;
 
         .humidity {
           margin-right: 1rem;
         }
         .deg_wind {
-          margin-right: 1rem;
-        }
-        .wind_speed {
           margin-right: 1rem;
         }
       }
