@@ -183,6 +183,7 @@
     min-width: 20rem;
     max-width: 20rem;
     height: 15rem;
+    display: flex;
     background-image: url(../img/mexico.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -195,8 +196,8 @@
     }
     .btn {
       height: 100%;
-      margin: -55px 0 0 155px;
       width: 8rem;
+      align-items: flex-end;
       background-color: $purple;
       color: white;
       font-size: 4rem;

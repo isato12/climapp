@@ -92,9 +92,7 @@
 @include tablet {
   .other_cities {
     z-index: 2000;
-    position: absolute;
     margin-top: -10rem;
-    right: 475px;
   }
   .card_rigth {
     height: 11rem;

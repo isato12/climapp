@@ -198,6 +198,7 @@ h2 {
     min-width: 20rem;
     max-width: 20rem;
     height: 15rem;
+    display: flex;
     background-image: url(../img/mexico.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -209,8 +210,8 @@ h2 {
       padding-top: 2rem; }
     .places_d .btn {
       height: 100%;
-      margin: -55px 0 0 155px;
       width: 8rem;
+      align-items: flex-end;
       background-color: #7d67ed;
       color: white;
       font-size: 4rem;
@@ -400,9 +401,7 @@ h2 {
 @media (min-width: 768px) {
   .other_cities {
     z-index: 2000;
-    position: absolute;
-    margin-top: -10rem;
-    right: 475px; }
+    margin-top: -10rem; }
   .card_rigth {
     height: 11rem; }
   .add_more {
