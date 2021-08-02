@@ -21,6 +21,14 @@
     .header_img {
       border-radius: 3rem;
       width: 100%;
+      & i {
+        color: $purple;
+        position: absolute;
+        left: 215px;
+        top: 10rem;
+        font-weight: $letter_black;
+        font-size: 3rem;
+      }
     }
   }
   .header_img h2 {

@@ -6,43 +6,40 @@ const description = document.querySelector("#description");
 const backImage = document.querySelector(".header_img");
 
 document.addEventListener("DOMContentLoaded", function () {
-  getWeather("Colombia");
+  getWeather("Bogota");
   cards(20.9881, -77.4297);
+  getWeather_dos("Paris");
+  getWeather_tres("Mexico City");
 });
 
 const displayBackground = (obj) => {
   const time = obj.dt;
   const hour = new Date(time * 1000).getHours();
-  
+
   const weather = obj.weather[0].main;
 
   if (hour > 6 && hour < 19 && weather.includes("Clouds")) {
     backImage.style.backgroundImage = 'url("img/background/clouds.jpg")';
-  } else {
+  } else if (hour < 6 && hour > 19 && weather.includes("Clouds")) {
     backImage.style.backgroundImage = 'url("img/background/cloudsn.jpg")';
-  }
-  if (hour > 6 && hour < 19 && weather.includes("Rain")) {
+  } else if (hour > 6 && hour < 19 && weather.includes("Rain")) {
     backImage.style.backgroundImage = 'url("img/background/rain.jpg")';
-  } else {
+  } else if (hour < 6 && hour > 19 && weather.includes("Rain")) {
     backImage.style.backgroundImage = 'url("img/background/rainn.jpg")';
-  }
-  if (hour > 6 && hour < 19 && weather.includes("Snow")) {
+  } else if (hour > 6 && hour < 19 && weather.includes("Snow")) {
     backImage.style.backgroundImage = 'url("img/background/snow.jpg")';
-  } else {
+  } else if (hour < 6 && hour > 19 && weather.includes("Snow")) {
     backImage.style.backgroundImage = 'url("img/background/snowN.jpg")';
-  }
-  if (hour > 6 && hour < 19 && weather.includes("Thunderstorm")) {
+  } else if (hour > 6 && hour < 19 && weather.includes("Thunderstorm")) {
     backImage.style.backgroundImage = 'url("img/background/thunderd.jpg")';
-  } else {
+  } else if (hour < 6 && hour > 19 && weather.includes("Thunderstorm")) {
     backImage.style.backgroundImage = 'url("img/background/thunderdn.jpg")';
-  }
-  if (hour > 6 && hour < 19 && weather.includes("Clear")) {
+  } else if (hour > 6 && hour < 19 && weather.includes("Clear")) {
     backImage.style.backgroundImage = 'url("img/background/sun.jpg")';
   } else {
     backImage.style.backgroundImage = 'url("img/background/moon.jpg")';
   }
 };
-
 const displaydata = (obj) => {
   city.textContent = obj.name; //para obtener nombre, no funciona por ahora
   const iconW = obj.weather[0].icon; //obtener icono
@@ -61,7 +58,6 @@ const getWeather = (city) => {
   function onRequestHandler() {
     if (this.readyState === 4 && this.status === 200) {
       const data = JSON.parse(this.responseText);
-      console.log(data);
       displayBackground(data);
       displaydata(data);
     }

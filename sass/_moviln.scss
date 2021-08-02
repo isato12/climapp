@@ -1,4 +1,12 @@
 @include telefonox {
+  .header_img i {
+    left: 130px;
+    top: 4.8rem;
+  }
+  .header_img h2 {
+    left: 30%;
+    top: 4rem;
+  }
   .container_movil {
     width: 90%;
     display: flex;

@@ -17,21 +17,13 @@ const displayDatas = (obj) => {
   addIcon.setAttribute("src", `img/icons/${icon}.svg`);
   icon_uno.appendChild(addIcon);
 
-  for (let i = 1; i < 4; i++) {
-    const time = obj.daily[i].dt;
-
-    let days = [
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-    ];
-    const day = new Date(time * 1000);
-    console.log(typeof day);
-  }
+  const diaSemana = new Date(obj.daily[0].dt * 1000)
+    .getDay()
+    .toLocaleString("mx-ES", {
+      timeStyle: "short",
+      dateStyle: "long",
+    });
+  console.log(diaSemana);
 };
 
 let cards = (lat, lon) => {
