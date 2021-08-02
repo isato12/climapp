@@ -7,6 +7,23 @@ const humidity_dos = document.querySelector("#humidity_dos");
 const deg_wind_dos = document.querySelector("#deg_wind_dos");
 const wind_speed_dos = document.querySelector("#wind_speed_dos");
 
+const degToCardinal = (deg) => {
+  let cardinalPoints = [
+    "Nordeste",
+    "Este",
+    "Sudeste",
+    "Sur",
+    "Sudoeste",
+    "West",
+    "Noroeeste",
+    "Norte",
+  ];
+  let index = deg - 22.5;
+  if (index < 0) index += 360;
+  index = parseInt(index / 45);
+  return cardinalPoints[index];
+};
+
 const displaydata3 = (obj) => {
   city_tres.textContent = obj.name; //para obtener nombre, no funciona por ahora
   const iconW = obj.weather[0].icon; //obtener icono
@@ -17,7 +34,7 @@ const displaydata3 = (obj) => {
   country_dos.textContent = obj.sys.country;
   humidity_dos.textContent = `Humidity: ${obj.main.humidity}%`;
   wind_speed_dos.textContent = `${obj.wind.speed} km/h`;
-  deg_wind_dos.textContent = obj.wind.deg;
+  deg_wind_dos.textContent = degToCardinal(obj.wind.deg);
 };
 
 const getWeather_tres = (city) => {

@@ -18,10 +18,8 @@ const displaydata2 = (obj) => {
   country.textContent = obj.sys.country;
   humidity.textContent = `Humidity: ${obj.main.humidity}%`;
   wind_speed.textContent = `${obj.wind.speed} km/h`;
-  deg_wind.textContent = obj.wind.deg;
+  deg_wind.textContent = degToCardinal(obj.wind.deg);
 };
-
-
 
 const getWeather_dos = (city) => {
   const key = "fc542c16b4298cc10a5d09ac11fb5aeb";
