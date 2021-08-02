@@ -4,11 +4,18 @@
   }
   .header_img {
     min-width: 20rem;
-    background-image: url(../img/nubes.jpg);
     background-position: center center;
     background-size: cover;
     height: 20rem;
     margin: 0;
+    & i {
+      color: $purple;
+      position: absolute;
+      left: 200px;
+      top: 135px;
+      font-weight: $letter_black;
+      font-size: 3rem;
+    }
   }
   .header_img h2 {
     color: $purple;
@@ -57,10 +64,9 @@
       top: 0rem;
       background-color: $blue;
       border-radius: 0 2rem 2rem 0;
-      & i {
+      & img {
         color: white;
-        font-size: 3rem;
-        padding-top: 1rem;
+        width: 3rem;
       }
     }
   }
@@ -111,11 +117,11 @@
       display: grid;
       place-items: center;
       color: $purple;
+      & img {
+        width: 3rem;
+      }
     }
-    & i {
-      font-size: 3rem;
-      padding: 0 1rem;
-    }
+
     .texto {
       display: grid;
       place-items: center;
@@ -148,7 +154,7 @@
     margin: 2rem 0;
     min-width: 20rem;
     height: 25rem;
-    background-image: url(../img/pueblo.jpg);
+    background-image: url(../img/places/pueblo.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -171,7 +177,7 @@
     margin: 2rem auto;
     min-width: 20rem;
     height: 10rem;
-    background-image: url(../img/museo.jpg);
+    background-image: url(../img/places/museo.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -189,7 +195,7 @@
     height: 15rem;
     display: flex;
     justify-content: space-between;
-    background-image: url(../img/mexico.jpg);
+    background-image: url(../img/places/mexico.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -208,6 +214,9 @@
       display: grid;
       place-items: center;
       border-radius: 2rem;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
   .other_cities {
@@ -225,7 +234,7 @@
 
       .flex_card {
         display: flex;
-        flex: wrap;
+        justify-content: space-between;
 
         .icon {
           width: 6.5rem;
@@ -234,10 +243,8 @@
           display: grid;
           place-items: center;
           border-radius: 2rem 1rem 1rem 1rem;
-          & i {
-            font-size: 3rem;
-            padding: 0 1rem;
-            color: $purple;
+          & img {
+            width: 3rem;
           }
         }
         .deg_o {
@@ -276,21 +283,24 @@
   }
 
   .add_more {
-    margin: 2rem 0;
+    margin: 1rem auto;
     min-width: 20rem;
     height: 15rem;
-    background-image: url(../img/city.jpg);
+    background-image: url(../img/places/city.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     & h3 {
       color: $purple;
       text-align: center;
-      padding-top: 5rem;
+      padding-top: 1rem;
     }
     & i {
       display: block;
-      margin-top: 2rem;
+      margin-top: 1rem;
+    }
+    &:hover {
+      cursor: pointer;
     }
   }
 

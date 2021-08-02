@@ -42,11 +42,17 @@ h2 {
     background-color: #fff; }
   .header_img {
     min-width: 20rem;
-    background-image: url(../img/nubes.jpg);
     background-position: center center;
     background-size: cover;
     height: 20rem;
     margin: 0; }
+    .header_img i {
+      color: #7d67ed;
+      position: absolute;
+      left: 200px;
+      top: 135px;
+      font-weight: 900;
+      font-size: 3rem; }
   .header_img h2 {
     color: #7d67ed;
     position: absolute;
@@ -95,10 +101,9 @@ h2 {
       top: 0rem;
       background-color: #2e338d;
       border-radius: 0 2rem 2rem 0; }
-      .box_purple .box_blue i {
+      .box_purple .box_blue img {
         color: white;
-        font-size: 3rem;
-        padding-top: 1rem; }
+        width: 3rem; }
   .box_shadow {
     display: block;
     width: 9rem;
@@ -140,9 +145,8 @@ h2 {
       display: grid;
       place-items: center;
       color: #7d67ed; }
-    .card-days i {
-      font-size: 3rem;
-      padding: 0 1rem; }
+      .card-days .icon img {
+        width: 3rem; }
     .card-days .texto {
       display: grid;
       place-items: center; }
@@ -167,7 +171,7 @@ h2 {
     margin: 2rem 0;
     min-width: 20rem;
     height: 25rem;
-    background-image: url(../img/pueblo.jpg);
+    background-image: url(../img/places/pueblo.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -186,7 +190,7 @@ h2 {
     margin: 2rem auto;
     min-width: 20rem;
     height: 10rem;
-    background-image: url(../img/museo.jpg);
+    background-image: url(../img/places/museo.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -202,7 +206,7 @@ h2 {
     height: 15rem;
     display: flex;
     justify-content: space-between;
-    background-image: url(../img/mexico.jpg);
+    background-image: url(../img/places/mexico.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -220,6 +224,8 @@ h2 {
       display: grid;
       place-items: center;
       border-radius: 2rem; }
+      .places_d .btn:hover {
+        cursor: pointer; }
   .other_cities {
     min-width: 23rem;
     margin: 2rem auto; }
@@ -234,7 +240,7 @@ h2 {
       background-color: #fff; }
       .other_cities .card_rigth .flex_card {
         display: flex;
-        flex: wrap; }
+        justify-content: space-between; }
         .other_cities .card_rigth .flex_card .icon {
           width: 6.5rem;
           height: 6.5rem;
@@ -242,10 +248,8 @@ h2 {
           display: grid;
           place-items: center;
           border-radius: 2rem 1rem 1rem 1rem; }
-          .other_cities .card_rigth .flex_card .icon i {
-            font-size: 3rem;
-            padding: 0 1rem;
-            color: #7d67ed; }
+          .other_cities .card_rigth .flex_card .icon img {
+            width: 3rem; }
         .other_cities .card_rigth .flex_card .deg_o {
           padding: 2rem 0.5rem;
           font-size: 2rem;
@@ -270,20 +274,22 @@ h2 {
         .other_cities .card_rigth .data .deg_wind {
           margin-right: 1rem; }
   .add_more {
-    margin: 2rem 0;
+    margin: 1rem auto;
     min-width: 20rem;
     height: 15rem;
-    background-image: url(../img/city.jpg);
+    background-image: url(../img/places/city.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; }
     .add_more h3 {
       color: #7d67ed;
       text-align: center;
-      padding-top: 5rem; }
+      padding-top: 1rem; }
     .add_more i {
       display: block;
-      margin-top: 2rem; }
+      margin-top: 1rem; }
+    .add_more:hover {
+      cursor: pointer; }
   .other_cities {
     margin: 0 auto;
     min-width: 20rem; }
@@ -409,5 +415,6 @@ h2 {
   .data {
     padding: 1rem 0.5rem; }
   .add_more {
-    margin-top: 6.5rem;
+    margin-top: 4rem;
+    width: 23rem;
     height: 15rem; } }
