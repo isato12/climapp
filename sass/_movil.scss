@@ -11,7 +11,7 @@
     & i {
       color: $purple;
       position: absolute;
-      left: 138px;
+      left: 115px;
       top: 4.8rem;
       font-weight: $letter_black;
       font-size: 3rem;
@@ -20,7 +20,7 @@
   .header_img h2 {
     color: $purple;
     position: absolute;
-    left: 60%;
+    left: 140px;
     top: 4rem;
     font-weight: $letter_black;
   }
@@ -99,11 +99,11 @@
     width: 90%;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin: auto;
   }
   .forecast {
     min-width: 20rem;
-    margin: 2rem 0;
+    margin: 2rem auto;
   }
   .card-days {
     margin: 0 auto;
@@ -152,8 +152,11 @@
     }
   }
 
+  .place_tovisit {
+    margin: 0 auto;
+  }
   .places {
-    margin: 2rem 0;
+    margin: 2rem auto;
     min-width: 20rem;
     height: 25rem;
     background-image: url(../img/places/pueblo.jpg);
@@ -227,9 +230,10 @@
     .card_rigth {
       display: flex;
       flex-direction: column;
-      width: 21rem;
-      height: 11rem;
-      margin: 0 auto 2rem auto;
+      justify-content: space-between;
+      width: 22rem;
+      height: 13rem;
+      margin: 0 auto 1.5rem auto;
       border-radius: 2rem;
       box-shadow: 5px 15px 15px $grayShadow;
       background-color: #fff;
@@ -264,7 +268,7 @@
           }
         }
         .coutry_city {
-          padding: 2rem 1rem;
+          padding: 1rem 0.5rem;
           font-weight: $letter_black;
         }
       }
@@ -272,7 +276,7 @@
         display: flex;
         flex: wrap;
         justify-content: space-between;
-        padding: 1rem 0.5rem 1rem 0;
+        padding: 1rem 0.5rem 1rem 0.5rem;
 
         .humidity {
           margin-right: 1rem;
