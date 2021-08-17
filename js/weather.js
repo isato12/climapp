@@ -6,7 +6,7 @@ const description = document.querySelector("#description");
 const backImage = document.querySelector(".header_img");
 
 document.addEventListener("DOMContentLoaded", function () {
-  getWeather("Bogota");
+  getWeather("Naucalpan");
   cards(20.9881, -77.4297);
   getWeather_dos("Paris");
   getWeather_tres("Mexico City");

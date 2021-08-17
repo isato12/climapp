@@ -29,7 +29,6 @@ const getWeather_dos = (city) => {
   function onRequestHandler() {
     if (this.readyState === 4 && this.status === 200) {
       const data = JSON.parse(this.responseText);
-      console.log(data);
       displaydata2(data);
     }
   }

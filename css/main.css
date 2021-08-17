@@ -152,10 +152,12 @@ h2 {
       place-items: center; }
       .card-days .texto .day {
         padding-top: 1rem;
-        margin: 0 1rem -1rem 1rem; }
+        margin: 0 1rem -1rem 1rem;
+        color: black; }
       .card-days .texto .description_days {
         padding-bottom: 1rem;
-        margin: -1rem 1rem 0 1rem; }
+        margin: -1rem 1rem 0 1rem;
+        color: black; }
     .card-days .deg_d {
       display: grid;
       place-items: center;
